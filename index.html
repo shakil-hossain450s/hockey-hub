@@ -36,10 +36,10 @@
 
 <body class="font-manrope">
     <!-- header start -->
-    <header class="mt-5 lg:mt-10">
+    <header class="mt-5 lg:my-10">
         <!-- navbar start -->
-        <nav class="container mx-auto px-4 lg:px-20">
-            <div class="navbar">
+        <nav class="container mx-auto px-4 md:px-20">
+            <div class="navbar p-0">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -80,6 +80,54 @@
             </div>
         </nav>
         <!-- navbar end -->
+        <!-- banner slider section start -->
+        <section class="container mx-auto px-4 mt-5 lg:mt-14 md:px-20">
+            <!-- slider container -->
+            <div class="relative">
+                <div class="carousel w-full lg:h-[550px] rounded-2xl ">
+                    <!-- slide 1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./images/1.png" class="w-full object-cover" />
+                        <div
+                            class="absolute w-full bottom-3 md:left-8 md:bottom-8 flex justify-center lg:justify-start transform gap-3">
+                            <a href="#slide4" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❮</a>
+                            <a href="#slide2" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./images/2.png" class="w-full object-cover -p-2" />
+                        <div class="absolute left-8 bottom-8 flex items-center transform gap-3">
+                            <a href="#slide1" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❮</a>
+                            <a href="#slide3" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="./images/3.png" class="w-full object-cover -p-2" />
+                        <div class="absolute left-8 bottom-8 flex items-center transform gap-3">
+                            <a href="#slide2" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❮</a>
+                            <a href="#slide4" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="./images/4.png" class="w-full object-cover -p-2" />
+                        <div class="absolute left-8 bottom-8 flex items-center transform gap-3">
+                            <a href="#slide3" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❮</a>
+                            <a href="#slide1" class="btn btn-circle border-0 hover:bg-theme2 bg-theme2 text-white">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="mt-5 lg:mt-0 lg:w-1/2 lg:absolute lg:-translate-y-48 right-8 text-white p-8 bg-theme2 rounded-2xl space-y-2 md:space-y-4">
+                    <h2 class="text-xl md:text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                    <p class="font-semibold text-[#FFFFFF99]">Hockey Hub a platform dedicated to celebrating and
+                        showcasing the incredible athletes and iconic figures from various sports. </p>
+                </div>
+            </div>
+        </section>
+        <!-- banner slider section end -->
     </header>
     <!-- header end -->
     <!-- main start -->
